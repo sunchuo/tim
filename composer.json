@@ -1,7 +1,7 @@
 {
     "name": "tim/rest",
     "type": "library",
-    "require": {}
+    "require": {},
     "autoload": {
         "psr-4": {
             "Tim\\Rest\\": "src/"
