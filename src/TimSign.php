@@ -1,13 +1,13 @@
 <?php
 
+namespace Tim\Rest;
+
 if (!extension_loaded('openssl')) {
     trigger_error('need openssl extension', E_USER_ERROR);
 }
 if (!in_array('sha256', openssl_get_md_methods(), true)) {
     trigger_error('need openssl support sha256', E_USER_ERROR);
 }
-
-namespace Tim\Rest;
 
 class Sig {
 

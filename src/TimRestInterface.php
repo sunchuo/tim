@@ -705,4 +705,4 @@ abstract class TimRestInterface
 	 */
 	abstract function comm_rest($server_name, $command, $req_body);
 }
-?>
+
