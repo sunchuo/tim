@@ -1,15 +1,8 @@
 <?php
 
-namespace Tim\Rest;
+namespace Tencent\TimRest;
 
-if (!extension_loaded('openssl')) {
-    trigger_error('need openssl extension', E_USER_ERROR);
-}
-if (!in_array('sha256', openssl_get_md_methods(), true)) {
-    trigger_error('need openssl support sha256', E_USER_ERROR);
-}
-
-class TimSign {
+class Sign {
 
     private $private_key = false;
     private $public_key = false;
