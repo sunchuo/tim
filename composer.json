@@ -1,0 +1,10 @@
+{
+    "name": "tim/rest",
+    "type": "library",
+    "require": {}
+    "autoload": {
+        "psr-4": {
+            "Tim\\Rest\\": "src/"
+        }
+    }
+}
