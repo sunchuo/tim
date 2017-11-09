@@ -1,6 +1,6 @@
 <?php
 
-namespace Tencent\TimRest;
+namespace Tencent\Tim;
 
 class Api {
 	#app基本信息

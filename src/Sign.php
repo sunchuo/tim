@@ -1,6 +1,6 @@
 <?php
 
-namespace Tencent\TimRest;
+namespace Tencent\Tim;
 
 class Sign {
 
