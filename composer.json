@@ -1,10 +1,10 @@
 {
-    "name": "tim/rest",
+    "name": "tencent/tim",
     "type": "library",
     "require": {},
     "autoload": {
         "psr-4": {
-            "Tencent\\TimRest\\": "src/"
+            "Tencent\\Tim\\": "src/"
         }
     }
 }
