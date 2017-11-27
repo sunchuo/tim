@@ -939,10 +939,17 @@ class Api {
 	{
 
 		#构造新消息
-		$filter = new Filter();
-		$filter->GroupBaseInfoFilter = $base_info_filter;
-		$filter->MemberInfoFilter = $member_info_filter;
-		$filter->AppDefinedDataFilter_Group = $app_define_filter;
+		$filter = [];
+		if (!empty($base_info_filter)) {
+			$filter['GroupBaseInfoFilter'] = $base_info_filter;
+		}
+		if (!empty($base_info_filter)) {
+			$filter['MemberInfoFilter'] = $member_info_filter;
+		}
+		if (!empty($base_info_filter)) {
+			$filter['AppDefinedDataFilter_Group'] = $app_define_filter;
+		}
+
 		$msg = array(
 				'GroupIdList' => $group_list,
 				'ResponseFilter' => $filter
