@@ -52,7 +52,14 @@ class Api {
 		$ret = $this->http_req('https', 'post', $url, $req_data);
 		return $ret;
 
-	}   
+	}
+
+    function request($server, $api, $data) {
+        $data = json_encode($data);
+        $ret = $this->api($server, $api, $this->identifier, $this->usersig, $data);
+        $ret = json_decode($ret, true);
+        return $ret;
+    }
 
 	/** 
 	 * 构造访问REST服务器参数,并发访问REST服务器
@@ -1101,6 +1108,7 @@ class Api {
 		$ret = json_decode($ret, true);
 		return $ret;
 	}
+
 
 	function group_get_joined_group_list($account_id)
 	{
